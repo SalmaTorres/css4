@@ -1,0 +1,61 @@
+body{
+    margin: 0;
+}
+.elemento-flexible{
+    font-size: 5rem;
+    color: white;
+}
+.contenedor-flexible-uno{
+    background-color: gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;    /*eje principal*/
+    justify-content: flex-start; 
+    align-items: flex-start;
+    flex-wrap: wrap; /*eje transversal */
+    align-content: flex-start; 
+}
+.contenedor-flexible-dos{
+    display: flex;
+    flex-direction: column; 
+    width: 50%;
+}
+.uno, .seis{
+    background-image: url("imagen1.jpg");
+    background-color: red;
+    /* width: 250px; */
+    height: 100%;
+    flex-basis: 50vh;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+.dos, .siete{
+    background-image: url("imagen2.jpg");
+    background-color: orange;
+    /* width: 250px; */
+    height: 250px;
+    flex-basis:50vh;
+    flex-grow: 2;
+    flex-shrink: 1;
+}
+.tres, .ocho{
+    background-image: url("imagen3.jpg");
+    background-color: blue;
+    /* width: 250px; */
+    height: 250px;
+    flex-basis: 50vh;
+    flex-grow: 3;
+    flex-shrink: 1;
+}
+.cuatro{
+    background-color: green;
+    /* width: 250px; */
+    height: 250px;
+    flex-basis: 350px;
+}
+.cinco{
+    background-color: fuchsia;
+    /* width: 250px; */
+    height: 250px;
+    flex-basis: 350px;
+}
